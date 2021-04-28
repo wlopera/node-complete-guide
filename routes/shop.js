@@ -15,7 +15,7 @@ router.get("/", (req, res, next) => {
   const products = adminData.products;
   res.render("shop", {
     prods: products,
-    pageTitle: "Tienda Pug",
+    pageTitle: "Tienda ",
     path: "/",
     hasProducts: products.length > 0,
     activeShop: true,
