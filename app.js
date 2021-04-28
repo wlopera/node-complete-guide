@@ -13,13 +13,15 @@ const app = express();
 const expressHbs = require("express-handlebars");
 
 // Registra la devolución de llamada del motor de plantilla dada como handlebars
-app.engine("hbs", expressHbs({ layoutsDir: "views/layout/", defaultLayout: "main-layout", extname: "hbs" }));
-
+// app.engine("hbs", expressHbs({ layoutsDir: "views/layout/", defaultLayout: "main-layout", extname: "hbs" }));
 // Plantilla Handlebars a usar por express
-app.set("view engine", "hbs");
+// app.set("view engine", "hbs");
 
 // Plantilla PUG a usar por express
 // app.set("view engine", "pug");
+
+// Plantilla EJS a usar por express
+app.set("view engine", "ejs");
 
 // Donde encontrar las vistas que requiere las plantillas
 app.set("views", "views");
